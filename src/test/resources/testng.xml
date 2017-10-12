@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SinoptikTestSuite" parallel="tests" thread-count="5">
+    <test name="Test in Chrome" verbose="1" parallel="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.company.ruzaliia_yakunina.automation.selenium.tests.SinoptikTest"/>
+        </classes>
+    </test>
+    <test name="Test in Firefox" verbose="1" parallel="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.company.ruzaliia_yakunina.automation.selenium.tests.SinoptikTest"/>
+        </classes>
+    </test>
+</suite>
